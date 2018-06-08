@@ -1,0 +1,53 @@
+TESTING FUNCTIONS
+
+Get 10 responses 
+--------------
+PASS: {"id":1,"word":"Nuance","type":"Noun","definition":"a subtle difference in meaning or opinion or attitude","frequency":0}
+PASS: {"id":2,"word":"Ubiquitous","type":"Adjective","definition":"being present everywhere at once","frequency":0}
+PASS: {"id":3,"word":"Innocuous","type":"Adjective","definition":"not injurious to physical or mental health\nnot causing disapproval\nlacking intent or capacity to injure","frequency":0}
+PASS: {"id":4,"word":"Grating","type":"Adjective, Verb, Noun","definition":"unpleasantly harsh or grating in sound","frequency":0}
+PASS: {"id":5,"word":"Benevolent","type":"Adjective","definition":"intending or showing kindness\nshowing or motivated by sympathy and understanding and generosity\ngenerous in providing aid to others\ngenerous in assistance to the poor","frequency":0}
+PASS: {"id":6,"word":"Furtively","type":"Adverb","definition":"in a furtive manner","frequency":0}
+PASS: {"id":7,"word":"Ingratiating","type":"Adjective, Verb","definition":"capable of winning favor\ncalculated to please or gain favor","frequency":0}
+PASS: {"id":8,"word":"Unequivocal","type":"Adjective","definition":"admitting of no doubt or misunderstanding; having only one meaning or interpretation and leading to only one conclusion\nor univocal\nclearly defined or formulated","frequency":0}
+PASS: {"id":9,"word":"Pedantic","type":"Adjective","definition":"marked by a narrow focus on or display of learning especially its trivial aspects","frequency":0}
+PASS: {"id":10,"word":"Etherial","type":"adjective","definition":"extremely delicate and light in a way that seems too perfect for this world","frequency":0}
+
+Get Non Existent ID 
+--------------
+PASS: NO Data Returned. 
+
+Get data by word 
+--------------
+Pass: {"id":96,"word":"Vexed","type":"Adjective, Verb","definition":"troubled persistently especially with petty annoyances\ncausing difficulty in finding an answer or solution; much disputed","frequency":0}
+
+Get data by blank word 
+--------------
+PASS: NO Data Returned. 
+
+Add data that exist 
+--------------
+PASS: words with this word already exists.. 
+
+Add new word 
+--------------
+PASS: {"id":127,"word":"test","type":"test","definition":"test","frequency":0}
+
+Delete Word 
+--------------
+PASS: Deleted. 
+
+TESTING: END Results
+--------------
+utest_get10: pass
+utest_get_nonexistent_res: pass
+utest_get_by_word_res: pass
+utest_get_by_blank_word: pass
+utest_post_exist_res: pass
+utest_post_new_word_res: pass
+utest_delete_word_res: pass
+
+BENCHMARK
+nGET Access Time: 50.331203ms
+Post Time: 101.772383ms
+Delete Time: 102.244239ms
